@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <label for="temperature">Enter temperature:</label>
+        <input type="number" id="temperature" placeholder="Enter temperature" step="0.01">
+        <div class="btn-group">
+            <button class="btn-celsius" onclick="Output('celsius')">Convert to Celsius</button>
+            <button class="btn-fahrenheit" onclick="Output('fahrenheit')">Convert to Fahrenheit</button>
+            <button class="btn-kelvin" onclick="Output('kelvin')">Convert to Kelvin</button>
+            <button class="btn-rankine" onclick="Output('rankine')">Convert to Rankine</button>
+        </div>
+
+        <div class="result">
+            <p class="result-celsius active" id="converted-celsius"></p>
+            <p class="result-fahrenheit" id="converted-fahrenheit"></p>
+            <p class="result-kelvin" id="converted-kelvin"></p>
+            <p class="result-rankine" id="converted-rankine"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
